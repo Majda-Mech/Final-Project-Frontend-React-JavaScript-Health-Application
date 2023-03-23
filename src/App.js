@@ -1,52 +1,37 @@
-import './App.css';
-import {Switch, Route, Redirect} from 'react-router-dom';
-import NavBar from "./components/navigation/NavBar";
-import Home from "./pages/Home";
+import {Route, Routes, Navigate} from 'react-router-dom';
 import Recipe from "./pages/Recipe";
+import NavBar from "./components/navigation/NavBar";
+import {useContext} from "react";
+import {AuthContext} from "./components/context/AuthContext";
+import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import OurApp from "./pages/OurApp";
 import Contacts from "./pages/Contacts";
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
-import Footer from "../../../../WebstormProjects/frontend-eind-opdracht-calorie-health-app/src/components/footer/Footer";
-import {AuthContext} from "./components/context/AuthContext";
-import {useContext} from "react";
 
-function App() {
+  function App() {
+    const {isAuth} =useContext(AuthContext)
 
-  const {isAuth} =useContext(AuthContext)
+    return (
+        <>
+              <NavBar/>
 
-  return (
-<>
-  <NavBar/>
-  <div className="content">
-    <Switch>
-      <Route exact path="/">
-      <Home/>
-      </Route>
-      <Route path="/recipe-info/:id">
-        {isAuth? <Recipe/> : <Redirect to="/log-in"/>}
-      </Route>
-      <Route path="/about-us">
-        <AboutUs/>
-      </Route>
-      <Route path="/our-app">
-        <OurApp/>
-      </Route>
-      <Route path="/contacts">
-        <Contacts/>
-      </Route>
-      <Route path="/log-in">
-        <LogIn/>
-      </Route>
-      <Route path="/sign-up">
-        <SignUp/>
-      </Route>
-    </Switch>
-</div>
-  <Footer/>
-</>
-  );
-}
+              <div className="content">
+                <Routes>
+                  <Route exact path="/" element={<Home />} />
+                  <Route exact path="/recipe-info/:id" element={isAuth ? <Recipe/>  : <Navigate to="/log-in"/>} />
+                  <Route exact path="/about-us" element={<AboutUs/>} />
+                  <Route exact path="/our-app" element={<OurApp/>} />
+                  <Route exact path="/contacts" element={<Contacts/>} />
+                  <Route exact path="/log-in" element={<LogIn/>} />
+                  <Route exact path="/sign-up" element={<SignUp/>} />
+                  <Route exact path='*' element={<Home/>} />
+                </Routes>
 
-export default App;
+              </div>
+        </>
+    );
+  }
+
+  export default App;

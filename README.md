@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+Installation Manual
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![blue lady.png](blue%20lady.png)
 
-## Available Scripts
+Welcome to my calorie & health application!
 
-In the project directory, you can run:
+Table of Contents
+1. About the application
+2. Getting started
+3. Information on the backend
+4. User access to the application
+5. User roles
+6. Admin access / admin roles
+7. Api & API-key
 
-### `npm start`
+------
+1. About the application
+With this application, users can calculate in a simple way their calorie or search for healthy recipes with cooking instructions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It helps the user to cook healthy and know how much calories they consume.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+See below the homepage, were the user can find all functionalities of the application.
 
-### `npm test`
+![HOME page.png](src%2Fassets%2FHOME%20page.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Getting started
+- To run this application you need an IDE, for example; Webstorm.
+- U clone the git repository to your local machine
+- install node_modules by running the following command:
 
-### `npm run build`
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once finalized you will be able to start the application with the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+OR: use (if you use Webstorm) use the Webstorm button (npm start).
+Open http://localhost:3000 to view the page in the browser.
 
-### `npm run eject`
+If you want to stop running the page in the browser use CTRL + C in the terminal. You can rerun the browser with the command mentioned above.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Backend for the HappyHour App
+   The educational backend of Novi Hogeschool has been used for this project. Please note: the manual to this backend are in Dutch only.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://github.com/hogeschoolnovi/novi-educational-backend-documentation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Access for users
+-Registration and Login
+After registering to the application on the registration page, then user will be able to log in with his USERNAME and PASSWORD. A personal token is being saved automatically in the backend. The user will NOT need the access token to log in.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-Password reset:
+There is no possibility to reset your password or to access it in another way (f.e. through a reset-email) once forgotten.
 
-## Learn More
+Please note:**
+the personal token and therefore the access rights expire after a couple of hours.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-Making a new account after access rights expire:
+The user can make a new account after his access rights expire. The system generates a new personal token that is connected to the user.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note:
+The user does not have to be able to retrieve the access token, as it will be automatically stored by the backend.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. User roles
+All users will be able to:
 
-### Analyzing the Bundle Size
+Register
+Login
+For non-registered users it is possible to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1.Search for recipe or calories (searchbar on homepage). 
+2.Search for recipe by ingredient (searchbar on search page). 
+3.View newly added recipes (the latest button on homepage). 
+4.View several favorite recipes of users (favorite recipes button on homepage).
 
-### Making a Progressive Web App
+A registered user can additionally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Access all the features mentioned above.
+Access his/her My Account page.
+Access his/her Favourites page
+Add and remove recipes to his/her Favourites page.
+View, once recipes are saved to the Favourites page, the instructions for the preparation of the recipes.
 
-### Advanced Configuration
+6. Admin access / admin roles
+There have been no admin roles created for this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+7. Api & API-key
+To acces the API key and API browser see the pdf-file of this frontend project and added to this section under "API-key".
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,0 +1,55 @@
+nav {
+    display: flex;
+    padding: 20px 35px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    font-family: "Roboto Thin";
+}
+
+.nav-center-styling {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.nav-right-styling {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:hover {
+    color: #0066ff;
+}
+
+nav a:active {
+    text-decoration-line: underline;
+    color: #0066ff;
+    font-weight: bold;
+    border-bottom: 1px #DCCCC1;
+}
+
+.active-link {
+    text-decoration-color: #DCCCC1;
+    font-weight: bold;
+    border-bottom: 3px solid #DCCCC1;
+    padding-bottom: 3px;
+}
+
+.logo-styling {
+    width: 150px;
+    height: 140px;
+}
+
