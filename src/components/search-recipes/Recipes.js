@@ -6,26 +6,29 @@ import {useNavigate} from "react-router-dom";
 
 const Recipes = () => {
 
-    const apiKey = "?apiKey="
+    const apiKey = "apiKey=414837368fe045f3aa88eb22c8bf6bc6"
 
     const [apiData, setApiData] = useState(``)
     const [searchData, setSearchData] = useState(``)
     const [search, setSearch] = useState(``)
     const navigate = useNavigate()
 
-    function handleSubmit(e) {
-        e.preventDefault()
-        setSearchData(search)
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault()
+    //     setSearchData(search)
+    // }
 
-    useEffect(() => {
-        const source = axios.CancelToken.source()
+    // useEffect(() => {
+    //     const source = axios.CancelToken.source()
 
-        async function fetchData() {
+        async function handleSubmit(e) {
+            e.preventDefault()
             console.log('fetchData aangeroepen')
+
             try {
-                const result = await axios.get(`https://api.spoonacular.com/food/ingredients/search${apiKey}&number=3&query=${searchData}`, {
-                    cancelToken: source.token,});
+                const result = await axios.get(`
+                https://api.spoonacular.com/recipes/complexSearch?${apiKey}&number=3&query=${search}`);
+
                 console.log('result.data: ', result.data)
                 setApiData(result.data.results)
 
@@ -34,14 +37,13 @@ const Recipes = () => {
             }
         }
 
-        if (searchData) {
-            fetchData();
-        }
-        return function cleanup() {
-            source.cancel();
-        }
+            // handleSubmit();
 
-    }, [searchData]);
+        // return function cleanup() {
+        //     source.cancel();
+        // }
+
+    // }, [searchData]);
 
     return (
         <div>
@@ -61,8 +63,8 @@ const Recipes = () => {
 
                 <div className="btn-recipe-styling">
                     <Button styleCompId="recipe-btn-styling"
-                            clickHandler={handleSubmit}
-                    >Search</Button>
+                            clickHandler={handleSubmit}>Search
+                    </Button>
                 </div>
             </div>
 
@@ -79,6 +81,7 @@ const Recipes = () => {
                             }
 
                             return (
+
                                 <li key={data.id}>
                                     <h2>{data.title}</h2>
                                     <img src={data.image} alt="food"/>
@@ -87,10 +90,8 @@ const Recipes = () => {
                                             clickHandler={redirectFunction}
                                         >Recipe Info</Button>
                                     </div>
-                                </li>)
-                        })}
-                    </ul>
-                </>}
+                                </li>)})}
+                    </ul></>}
             </div>
         </div>
     );

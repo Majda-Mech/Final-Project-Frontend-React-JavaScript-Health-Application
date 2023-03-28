@@ -2,6 +2,7 @@ import React from 'react';
 import "./pages.css"
 import Slogan from "../components/slogantext/Slogan";
 import sloganImg from "../assets/blue lady first page.png";
+
 const AboutUs = () => {
     return (
         <div>

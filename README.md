@@ -15,6 +15,8 @@ Table of Contents
 
 ------
 1. About the application
+
+On this lin k u can find the repository of the application -> https://github.com/Majda-Mech/Frontend-Heath-Calorie-Application
 With this application, users can calculate in a simple way their calorie or search for healthy recipes with cooking instructions.
 
 It helps the user to cook healthy and know how much calories they consume.
