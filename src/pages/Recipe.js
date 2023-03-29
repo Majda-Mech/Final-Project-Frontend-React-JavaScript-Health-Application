@@ -7,7 +7,7 @@ import UserData from "../components/userdata/UserData";
 
 const Recipe = () => {
 
-    const apiKey = "apiKey=414837368fe045f3aa88eb22c8bf6bc6"
+    const apiKey = "apiKey=2833f45c5780466fab0feaa2a66076e0"
     const {id} = useParams();
     const apiData = `https://api.spoonacular.com/recipes/${id}/information?${apiKey}&includeNutrition=false`
     const [recipe, setRecipe] = useState(``)

@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom";
 
 const Recipes = () => {
 
-    const apiKey = "apiKey=414837368fe045f3aa88eb22c8bf6bc6"
+    const apiKey = "apiKey=2833f45c5780466fab0feaa2a66076e0"
 
     const [apiData, setApiData] = useState(``)
     const [searchData, setSearchData] = useState(``)
