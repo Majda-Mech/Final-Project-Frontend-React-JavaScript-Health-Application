@@ -56,4 +56,5 @@ To acces the API key and API browser see the pdf-file of this frontend project a
 I made the screen designs in Figma. If u need more info about the screen designs or just questions send me an email on -> mechda.zariouh@gmail.com
 
 <img width="383" alt="Screenshot 2023-03-18 at 09 30 22" src="https://user-images.githubusercontent.com/112877888/228516896-b26f7de5-0288-42df-a905-a75d00d16f32.png">
-## .Frontend-React-JavaScript-Health-Application
+
+*Frontend-React-JavaScript-Health-Application
