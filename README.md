@@ -38,7 +38,7 @@ Please note:** the personal token and therefore the access rights expire after a
 The user can make a new account after his access rights expire. The system generates a new personal token that is connected to the user.
 Note: The user does not have to be able to retrieve the access token, as it will be automatically stored by the backend.
 
-##5. User roles
+## 5. User roles
 All users will be able to:
 -Register
 -Login
@@ -46,13 +46,13 @@ All users will be able to:
 -Search for recipe by ingredient (searchbar on search page).
 -See the cooking steps for the recipe. And calories, fat and other info of the recipe.
 
-##6. Admin access / admin roles
+## 6. Admin access / admin roles
 There have been no admin roles created for this project.
 
-##7. Api & API-key
+## 7. Api & API-key
 To acces the API key and API browser see the pdf-file of this frontend project and added to this section under "API-key".
 
-##8. Screen Designs of the application & contact
+## 8. Screen Designs of the application & contact
 I made the screen designs in Figma. If u need more info about the screen designs or just questions send me an email on -> mechda.zariouh@gmail.com
 
 <img width="383" alt="Screenshot 2023-03-18 at 09 30 22" src="https://user-images.githubusercontent.com/112877888/228516896-b26f7de5-0288-42df-a905-a75d00d16f32.png">
