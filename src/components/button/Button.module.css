@@ -1,0 +1,20 @@
+.button-styling {
+    background-color: #C3CDC1;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.button-styling:active {
+    background-color: #DCCCC1;
+    box-shadow: 0 5px rgba(107, 111, 107, 0.53);
+    transform: translateY(4px);
+}
+
+.button-styling:hover {
+    background-color: #C3CDC1
+}
+
