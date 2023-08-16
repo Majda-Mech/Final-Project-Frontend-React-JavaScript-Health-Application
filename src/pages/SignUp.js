@@ -16,7 +16,7 @@ const SignUp = () => {
         e.preventDefault()
 
        try{
-            await axios.post(`https://frontend-educational-backend.herokuapp.com/api/auth/signup`,{
+            await axios.post("https://localhost:8080/users",{
                 username: name,
                 email: email,
                 password: password,

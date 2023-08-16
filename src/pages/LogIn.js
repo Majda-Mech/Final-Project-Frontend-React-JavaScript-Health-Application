@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Slogan from "../components/slogantext/Slogan";
 import sloganImg from "../../../frontend-eindopdracht/src/assets/blue lady first page.png";
 import Button from "../components/button/Button";
@@ -16,12 +16,12 @@ const LogIn = () => {
         e.preventDefault()
 
         try {
-            const result = await axios.post(`https://frontend-educational-backend.herokuapp.com/api/auth/signin`, {
-                username: name,
+            const result = await axios.post("http://localhost:8080/auth" ,{
                 password: password,
-            })
+                username: name,
+            });
             console.log( result.data);
-            login(result.data.accessToken);
+            login(result.data);
 
         } catch (e) {
             console.error(e)
