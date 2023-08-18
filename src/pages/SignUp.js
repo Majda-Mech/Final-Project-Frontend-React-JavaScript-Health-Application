@@ -16,7 +16,7 @@ const SignUp = () => {
         e.preventDefault()
 
        try{
-            await axios.post("https://localhost:8080/users",{
+            await axios.post("http://localhost:8080/users",{
                 username: name,
                 email: email,
                 password: password,
@@ -77,7 +77,7 @@ const SignUp = () => {
                 </label>
 
                 <div className="btn-signup-styling">
-                    <Button> Sign Up </Button>
+                    <Button type="submit"> Sign Up </Button>
                 </div>
             </form>
             <section className="redirect-styling-2"><p>Already have an account </p>
