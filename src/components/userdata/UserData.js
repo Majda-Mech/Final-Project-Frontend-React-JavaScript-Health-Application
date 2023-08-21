@@ -13,7 +13,7 @@ const UserData = () => {
             const token = localStorage.getItem('token');
 
             try {
-                const result = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user`, {
+                const result = await axios.get(`http://localhost:8081/users`, {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${token}`,

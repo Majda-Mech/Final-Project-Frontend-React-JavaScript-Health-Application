@@ -16,12 +16,12 @@ const LogIn = () => {
         e.preventDefault()
 
         try {
-            const result = await axios.post("http://localhost:8080/auth" ,{
+            const result = await axios.post("http://localhost:8081/authenticate" ,{
                 password: password,
                 username: name,
             });
             console.log( result.data);
-            login(result.data);
+            login(result.data.jwt);
 
         } catch (e) {
             console.error(e)
