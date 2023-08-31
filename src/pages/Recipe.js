@@ -9,11 +9,9 @@ const Recipe = () => {
 
     const apiKey = "apiKey=2833f45c5780466fab0feaa2a66076e0"
     const {id} = useParams();
-    const apiData = `https://api.spoonacular.com/recipes/${id}/information?${apiKey}&includeNutrition=false`
     const [recipe, setRecipe] = useState(``)
 
     useEffect(() => {
-        // const source = axios.CancelToken.source()
 
         async function fetchData() {
             console.log(id)
@@ -33,10 +31,6 @@ const Recipe = () => {
         }
 
         fetchData()
-        // fetchData().then(r => )
-        // return function cleanup(){
-        //     source.cancel();
-        // }
 
     }, [id]);
 

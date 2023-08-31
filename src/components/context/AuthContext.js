@@ -49,10 +49,10 @@ function AuthContextProvider({children}) {
 
     async function fetchData(jwt, id ,redirect) {
         try {
-            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user$`, {
+            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user`, {
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer ${jwt}`,
+                "Authorization" : `Bearer ${jwt}`,
                 }
             })
             console.log(response)

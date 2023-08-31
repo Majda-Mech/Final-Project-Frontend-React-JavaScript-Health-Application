@@ -23,15 +23,15 @@ const NavBar = () => {
                 <img src={logo} alt="logo" className="logo-styling"/>
             </span>
             <span className="nav-center-styling">
-            <NavLink to="/" exact={true} activeClassName="active-link"> Home </NavLink>
-            <NavLink to="/about-us" activeClassName="active-link"> About Us </NavLink>
-            <NavLink to="/our-app" activeClassName="active-link"> Our App </NavLink>
-            <NavLink to="/contacts" activeClassName="active-link"> Contacts </NavLink>
+            <NavLink to="/" exact="true" activeclassname="active-link"> Home </NavLink>
+            <NavLink to="/about-us" activeclassnamee="active-link"> About Us </NavLink>
+            <NavLink to="/our-app" activeclassname="active-link"> Our App </NavLink>
+            <NavLink to="/contacts" activeclassame="active-link"> Contacts </NavLink>
             </span>
             <span className="nav-right-styling">
                 Welcome {user && user.username}
             { !isAuth?
-                <NavLink to="/log-in" activeClassName="active-link">
+                <NavLink to="/log-in" activeclassname="active-link">
                     Log in </NavLink> : <Button clickHandler={logOutFunction}>Logout</Button> }
                 {!isAuth?
                 <Button clickHandler={signUpFunction} >Sign Up</Button> : ""}
