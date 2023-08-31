@@ -34,7 +34,6 @@ const Recipe = () => {
 
         fetchData()
         // fetchData().then(r => )
-
         // return function cleanup(){
         //     source.cancel();
         // }

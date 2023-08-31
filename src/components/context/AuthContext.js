@@ -1,10 +1,10 @@
+
 import React, {createContext, useEffect, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 import jwtDecode from "jwt-decode";
 import axios from "axios";
 
 export const AuthContext = createContext({});
-
 
 function AuthContextProvider({children}) {
 
@@ -49,7 +49,7 @@ function AuthContextProvider({children}) {
 
     async function fetchData(jwt, id ,redirect) {
         try {
-            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user`, {
+            const response = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user$`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${jwt}`,
@@ -80,7 +80,6 @@ function AuthContextProvider({children}) {
         }
     }
 
-
     function logout() {
         console.log( "De gebruiker is uitgelogd 🔒" )
         localStorage.removeItem( 'token' )
@@ -93,15 +92,12 @@ function AuthContextProvider({children}) {
         navigate('/');
     }
 
-
     const data = {
-
         login: login,
         logout: logout,
         isAuth: auth.isAuth,
         user: auth.user,
         status: auth.status
-
     };
 
     return (

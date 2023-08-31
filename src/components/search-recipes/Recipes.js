@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "./Recipes.css"
 import axios from "axios";
 import Button from "../button/Button";
@@ -9,17 +9,8 @@ const Recipes = () => {
     const apiKey = "apiKey=2833f45c5780466fab0feaa2a66076e0"
 
     const [apiData, setApiData] = useState(``)
-    const [searchData, setSearchData] = useState(``)
     const [search, setSearch] = useState(``)
     const navigate = useNavigate()
-
-    // function handleSubmit(e) {
-    //     e.preventDefault()
-    //     setSearchData(search)
-    // }
-
-    // useEffect(() => {
-    //     const source = axios.CancelToken.source()
 
         async function handleSubmit(e) {
             e.preventDefault()
@@ -36,14 +27,6 @@ const Recipes = () => {
                 console.error(e);
             }
         }
-
-            // handleSubmit();
-
-        // return function cleanup() {
-        //     source.cancel();
-        // }
-
-    // }, [searchData]);
 
     return (
         <div>
