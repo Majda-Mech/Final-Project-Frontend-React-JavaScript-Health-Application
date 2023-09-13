@@ -9,8 +9,7 @@ const Button = ({isDisabled, clickHandler, children, styleCompId}) => {
                     type="submit"
                     disabled={isDisabled}
                     onClick={clickHandler}
-            >
-                {children}
+            >{children}
             </button>
         </div>
     );
