@@ -1,0 +1,23 @@
+.slogan-styling {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 121px;
+    margin-right: 193px;
+    gap: 82px;
+}
+
+img {
+    width: 520px;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: normal;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}

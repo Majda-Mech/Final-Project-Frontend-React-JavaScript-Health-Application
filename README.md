@@ -5,7 +5,7 @@
  <img width="540" alt="buik" src="https://user-images.githubusercontent.com/112877888/228510996-a0b85df7-e6d2-4125-9469-ad3f3d6cce90.png">
 
 ## 1. About the application
-On this lin k u can find the repository of the application -> https://github.com/Majda-Mech/Frontend-Heath-Calorie-Application
+On this lin k u can find the repository of the application -> https://github.com/Majda-Mech/Final-Project-Frontend-React-JavaScript-Health-Application
 With this application, users can calculate in a simple way their calorie or search for healthy recipes with cooking instructions.
 
 It helps the user to cook healthy and know how much calories they consume.

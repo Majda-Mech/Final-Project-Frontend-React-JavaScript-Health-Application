@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
 import Slogan from "../components/slogantext/Slogan";
+// import sloganImg from "../../../frontend-eindopdracht/src/assets/blue lady first page.png";
 import sloganImg from "../../../frontend-eindopdracht/src/assets/blue lady first page.png";
 import Button from "../components/button/Button";
 import "./pages.css";

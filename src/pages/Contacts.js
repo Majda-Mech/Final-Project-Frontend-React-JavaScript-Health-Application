@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Slogan from "../components/slogantext/Slogan";
-import sloganImg from "../../../frontend-eindopdracht/src/assets/Screenshot 2023-03-18 at 09.30.22.png";
+import sloganImg from "../../../frontend-eindopdracht/src/assets/salad.png";
 import Button from "../components/button/Button";
 
 const Contacts = () => {
