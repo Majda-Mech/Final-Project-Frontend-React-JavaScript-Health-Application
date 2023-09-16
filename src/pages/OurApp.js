@@ -1,8 +1,6 @@
 import React from 'react';
 import Slogan from "../components/slogantext/Slogan";
-// import sloganImg from "../../../frontend-eindopdracht/src/assets/buik.png";
 import guideImg from "../assets/buik.png"
-
 import {Link} from "react-router-dom";
 
 const OurApp = () => {

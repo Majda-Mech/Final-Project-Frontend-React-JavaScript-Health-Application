@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Slogan from "../components/slogantext/Slogan";
 import sloganImg from "../../../frontend-eindopdracht/src/assets/first page app.png";

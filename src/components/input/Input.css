@@ -1,0 +1,33 @@
+
+.margin-bottom2 {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #929a8f;
+}
+
+input {
+    font-size: 20px;
+    font-style: normal;
+    width: 400px;
+    height: 40px;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #929a8f;
+    background-color: #F9F9F9;
+    border: solid #807575;
+    border-radius: 5px;
+    padding: 12px 24px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0066ff;
+}
+
+.error-message {
+    font-size: 16px;
+    color: #ff0000;
+}
